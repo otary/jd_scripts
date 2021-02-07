@@ -17,7 +17,7 @@ cron "1 0,1-23/3 * * *" script-path=https://gitee.com/lxk0301/jd_scripts/raw/mas
  */
 const $ = new Env('热8超级盲盒');
 //Node.js用户请在jdCookie.js处填写京东ck;
-const jdCookieNode = $.isNode() ? require('../jdCookie.js') : '';
+const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 
 //直接用NobyDa的jd cookie
 let cookie = jdCookieNode.CookieJD ? jdCookieNode.CookieJD : $.getdata('CookieJD');
