@@ -1,6 +1,6 @@
 /*
  * @Author: LXK9301
- * @Date: 2020-10-21 17:04:04 
+ * @Date: 2020-10-21 17:04:04
  * @Last Modified by: LXK9301
  * @Last Modified time: 2020-11-05 00:35:04
  */
@@ -26,9 +26,9 @@
  */
 const $ = new Env('京东星推官');
 const activeEndTime = '2020/11/11 23:59:59+08:00';//活动结束时间
-const notify = $.isNode() ? require('../sendNotify') : '';
+const notify = $.isNode() ? require('./sendNotify') : '';
 //Node.js用户请在jdCookie.js处填写京东ck;
-const jdCookieNode = $.isNode() ? require('../jdCookie.js') : '';
+const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 
 //IOS等用户直接用NobyDa的jd cookie
 let cookiesArr = [], cookie = '';
