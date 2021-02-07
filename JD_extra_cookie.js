@@ -1,7 +1,10 @@
 /*
 感谢github@dompling的PR
+
 Author: 2Ya
+
 Github: https://github.com/dompling
+
 ===================
 特别说明：
 1.获取多个京东cookie的脚本，不和NobyDa的京东cookie冲突。注：如与NobyDa的京东cookie重复，建议在此处删除重复的cookie
@@ -14,16 +17,19 @@ new Env('获取多账号京东Cookie');//此处忽略即可，为自动生成iOS
 ===================
 [MITM]
 hostname = wq.jd.com
+
 ===================Quantumult X=====================
 [rewrite_local]
 # 获取多账号京东Cookie
-https:\/\/wq\.jd\.com\/user_new\/info\/GetJDUserInfoUnion url script-request-header https://raw.githubusercontent.com/LXK9301/jd_scripts/master/JD_extra_cookie.js
+https:\/\/wq\.jd\.com\/user_new\/info\/GetJDUserInfoUnion url script-request-header https://gitee.com/lxk0301/jd_scripts/raw/master/JD_extra_cookie.js
+
 ===================Loon===================
 [Script]
-http-request https:\/\/wq\.jd\.com\/user_new\/info\/GetJDUserInfoUnion script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/JD_extra_cookie.js, tag=获取多账号京东Cookie
+http-request https:\/\/wq\.jd\.com\/user_new\/info\/GetJDUserInfoUnion script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/JD_extra_cookie.js, tag=获取多账号京东Cookie
+
 ===================Surge===================
 [Script]
-获取多账号京东Cookie = type=http-request,pattern=^https:\/\/wq\.jd\.com\/user_new\/info\/GetJDUserInfoUnion,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/LXK9301/jd_scripts/master/JD_extra_cookie.js,script-update-interval=0
+获取多账号京东Cookie = type=http-request,pattern=^https:\/\/wq\.jd\.com\/user_new\/info\/GetJDUserInfoUnion,requires-body=1,max-size=0,script-path=https://gitee.com/lxk0301/jd_scripts/raw/master/JD_extra_cookie.js,script-update-interval=0
  */
 
 const APIKey = "CookiesJD";
