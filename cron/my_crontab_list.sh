@@ -53,7 +53,7 @@
 # 京东排行榜
 0 9 * * * node /scripts/jd_rankingList.js >> /scripts/logs/jd_rankingList.log 2>&1
 # 小火箭
-10 0 * * * node /scripts/jd_pubg.js >> /scripts/logs/jd_pubg.log 2>&1
+# 10 0 * * * node /scripts/jd_pubg.js >> /scripts/logs/jd_pubg.log 2>&1
 # 快递签到
 10 1 * * * node /scripts/jd_kd.js >> /scripts/logs/jd_kd.log 2>&1
 # 京东直播
@@ -63,7 +63,7 @@
 # 京东代属
 # 10 7 * * * node /scripts/jd_ds.js >> /scripts/logs/jd_ds.log 2>&1
 # 京东看一看
-10 9 * * * node /scripts/jd_watch.js >> /scripts/logs/jd_watch.log 2>&1
+# 10 9 * * * node /scripts/jd_watch.js >> /scripts/logs/jd_watch.log 2>&1
 # 京东健康
 10 8 * * * node /scripts/jd_jdh.js >> /scripts/logs/jd_jdh.log 2>&1
 # 京东健康抽奖机
