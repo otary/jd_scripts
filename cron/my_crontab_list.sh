@@ -119,4 +119,17 @@
 2 0 * * * node /scripts/jd_cash.js >> /scripts/logs/jd_cash.log 2>&1
 # 京喜故事
 10 7 * * * node /scripts/jd_jxstory.js >> /scripts/logs/jd_jxstory.log 2>&1
+# 京东极速版签到
+0 5 * * * node /scripts/jd_speed_sign.js >> /scripts/logs/jd_speed_sign.log 2>&1
+# 京东极速版红包
+0 0 * * * node /scripts/jd_speed_redpocke.js >> /scripts/logs/jd_speed_redpocke.log 2>&1
+# 京东保价
+0 5 * * * node /scripts/jd_price.js >> /scripts/logs/jd_price.log 2>&1
+# 京东汽车
+10 7 * * * node /scripts/jd_car.js >> /scripts/logs/jd_car.log 2>&1
+# 美丽研究院
+1 7,12,19 * * * node /scripts/jd_beauty.js >> /scripts/logs/jd_beauty.log 2>&1
+
+
+
 
