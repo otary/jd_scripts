@@ -129,6 +129,8 @@
 10 7 * * * node /scripts/jd_car.js >> /scripts/logs/jd_car.log 2>&1
 # 美丽研究院
 1 7,12,19 * * * node /scripts/jd_beauty.js >> /scripts/logs/jd_beauty.log 2>&1
+# 小鸽有礼2
+30 7 * * * node /scripts/jd_xgyl.js >> /scripts/logs/jd_xgyl.log 2>&1
 
 
 
